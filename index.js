@@ -16,7 +16,7 @@ const fetchMovies = async (searchText) => {
   
  
     
-   let myhtml = matches.map( movie => `<div class="padder">
+   let myhtml = matches.length == 0 ? `<div class="noresults"> Sorry No Results </div>` : matches.map(movie => `<div class="padder">
     <div class="moviecard">
         <div class="img"><img src=${movie.posterUrl} class="poster"></div>
         <div class="left">
@@ -32,7 +32,6 @@ const fetchMovies = async (searchText) => {
     </div>
     </div>`
     ).join('');
-    
     results.classList.remove('hidden');
 
     if(textBox.value == "")
@@ -43,6 +42,7 @@ const fetchMovies = async (searchText) => {
     }
 
 results.innerHTML = myhtml;
+  
 }
 
 

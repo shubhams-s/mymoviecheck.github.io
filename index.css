@@ -23,6 +23,14 @@ body{
     color: grey;
     background: linear-gradient(to bottom right,rgb(0, 77, 77),rgb(63, 15, 73));
 }
+.noresults{
+    display: grid;
+    place-items: center;
+    font-size: large;
+    color: grey;
+    height: 100%;
+    width: 100%;
+}
 h1{
   
     font-size: 1.8rem;
