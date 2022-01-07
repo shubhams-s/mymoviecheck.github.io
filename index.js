@@ -1,7 +1,8 @@
 let textBox = document.getElementById("textBox");
 let results = document.querySelector('.results');
+let mainArea = document.querySelector(".mainArea");
 
-document.body.addEventListener("click", ()=>{
+mainArea.addEventListener("click", ()=>{
     results.classList.add("hidden");
 });
 
@@ -16,7 +17,7 @@ const fetchMovies = async (searchText) => {
   
  
     
-   let myhtml = matches.length == 0 ? `<div class="noresults"> Sorry No Results </div>` : matches.map(movie => `<div class="padder">
+   let myhtml = matches.length == 0 ? `<div class="noresults"> Sorry :( No Results Found</div>` : matches.map(movie => `<div class="padder">
     <div class="moviecard">
         <div class="img"><img src=${movie.posterUrl} class="poster"></div>
         <div class="left">

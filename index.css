@@ -154,7 +154,7 @@ mark{
 .title{
     flex:1;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 20px;
     font-weight: 600;
     text-transform: uppercase;
     color: rgba(255, 0, 0, 0.555);
@@ -176,7 +176,7 @@ mark{
 .year{
     width: 50%;
     height: 100%;
-    padding-left: 30px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     
@@ -193,14 +193,9 @@ mark{
 .plot{
     width: 100%;
     flex: 2;
-    padding: 30px;
+    padding: 20px;
     overflow-y: auto;
     font-size: 0.8rem;
-}
-.idno{
-
-    padding: 20px;
-    background-color: rgb(23, 23, 23);
 }
 .img{
     height: 100%;
@@ -219,6 +214,6 @@ mark{
        
     }
     .img{
-        height: 80%;
+        height: 60%;
     }
 }
